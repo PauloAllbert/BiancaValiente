@@ -5,7 +5,7 @@ $(".abrir").click(function () {
     });
 });
 
-$(".fechar").click(function () {
+$(".cerrar").click(function () {
     $("nav").css({
         top: "0",
         left: "-100%"

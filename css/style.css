@@ -67,10 +67,10 @@
   width: 100%;
 }
 
-
 /* ------------------------------------------------------------ MENU ---------------------------*/
 
-.menu {
+.bars {
+  display: flex;
   width: 100%;
   position: sticky;
   padding: 3px;
@@ -79,20 +79,16 @@
   background-color: #28162c;
 }
 
-.bars {
-  display: flex;
-}
-
 .abrir {
   padding: 10px;
   color: #fff;
   font-size: 20px;
 }
 
-.fechar {
+.cerrar {
   color: #fff;
   font-size: 20px;
-  padding: 56px 0px 0 25px;
+  padding: 31px 0px 0 25px;
 }
 
 .bars img {
@@ -114,7 +110,7 @@ nav {
   left: -100%;
   background: #28162c;
   transition: left 1s;
-  z-index: 1;
+  z-index: 3;
 }
 
 nav div {
@@ -123,7 +119,6 @@ nav div {
 
 nav ul li {
   padding: 20px;
-  float: none;
   cursor: pointer;
   border-bottom: 1px solid rgba(61, 56, 61, 1);
 }
@@ -132,41 +127,20 @@ nav ul li:hover {
   background: #0e0011;
 }
 
-
 nav ul li a {
   font-size: 15px;
   color: #fff;
 }
 
-/*nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid red;
-}
-
-.menu-ul ul li {
-  padding: 10px;
-  float: left;
-  border: 1px solid pink;
-}
-
-.menu-ul ul li a {
-  font-size: 15px;
-  color: #fff;
-  border: 1px solid yellow;
-}*/
-
-.logo-menu img {
+.logo-desktop {
   display: none;
-  width: 120px;
-  border: solid orange;
 }
 
 /* ----------------------------------------------------------------- HEADER ----------------------------------*/
 
 .header {
-  background-image: url(../imagens/photo-bg@2x.jpg);
+  border: none !important;
+  background-image: url(../imagens/photo-bg@3x.jpg);
   background-size: cover;
   height: 95vh;
 }
@@ -199,7 +173,7 @@ nav ul li a {
   width: 254px;
   text-align: center;
   background: #f79a2f;
-  padding: 22px 80px;
+  padding: 22px 55px;
   border: none;
   border-radius: 35px;
   box-shadow: 0 1px 13px 0 rgba(247, 154, 47, 0.89);
@@ -213,7 +187,6 @@ nav ul li a {
 .button-three a {
   color: #fff;
 }
-
 
 /* ----------------------------------------------------------- SECÇÃO BIANCA ----------------------*/
 
@@ -247,7 +220,6 @@ nav ul li a {
   margin-bottom: 15px;
   padding: 5px;
 }
-
 
 /* ----------------------------------------------------------- SECÇÃO VIDEO ----------------------*/
 
@@ -332,7 +304,6 @@ nav ul li a {
   max-width: 60%;
   height: auto;
   border-radius: 100%;
-
 }
 
 .adulto2 {
@@ -387,6 +358,10 @@ nav ul li a {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.ul-carousel {
+  display: flex;
 }
 
 .carousel__button {
@@ -448,7 +423,7 @@ nav ul li a {
   font-size: 0.85em;
   line-height: 1.5em;
   border-radius: 15px;
-  width: 100%;
+  width: 85%;
   height: auto;
   color: black;
   padding: 10px;
@@ -470,17 +445,16 @@ nav ul li a {
 }
 
 .balao2 {
-  margin: 0 auto;
+  margin: auto;
   background: #ffffff;
   font-family: "roboto";
   font-size: 0.85em;
   line-height: 1.5em;
   border-radius: 15px;
-  width: 200%;
-  /* width: 417px;*/
-  height: 209px;
+  width: 100%;
+  height: auto;
   color: black;
-  padding: 10%;
+  padding: 10px;
   position: relative;
 }
 
@@ -502,9 +476,7 @@ nav ul li a {
   display: none;
 }
 
-
 /*--------------------------------------------------------------- BLOG  -----------------------------*/
-
 
 .blog {
   padding-top: 55px;
@@ -547,7 +519,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-
 /*--------------------------------------------------------------- CONTATO  -----------------------------*/
 
 .contato {
@@ -564,7 +535,8 @@ nav ul li a {
 .contato form {
   width: 90%;
   margin: auto;
-  margin-top: -311px;
+  margin-top: -295px;
+  margin-bottom: 20px;
   height: auto;
   position: relative;
   padding: 20px;
@@ -624,7 +596,6 @@ textarea {
   margin-bottom: 6px;
 }
 
-
 /*--------------------------------------------------------------- FOOTER  -----------------------------*/
 
 .footer {
@@ -641,9 +612,195 @@ textarea {
   justify-content: center;
 }
 
+.footer ul li a img {
+  width: 80%;
+}
+
 .footer div ul li {
   margin: 5px;
 }
 
+@media only screen and (min-width: 600px) {
+  .header h1 {
+    font-size: 80px;
+    width: 100%;
+  }
 
-@media only screen and (max-width: 600px) {}
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .button-one,
+  .button-two,
+  .button-three {
+    width: 300px;
+  }
+
+  /* ----------------------------------------------------------- SECÇÃO BIANCA TABLET ----------------------*/
+
+  .sobre-bianca {
+    column-count: 2;
+    column-gap: 10px;
+  }
+
+  /* ----------------------------------------------------------- SECÇÃO VIDEO TABLET----------------------*/
+  .videos ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ----------------------------------------------------------- SECÇÃO EXPERIENCIA CLIENTE ----------------------*/
+
+  .desaparecer {
+    display: block;
+  }
+
+  .img-name {
+    width: 128%;
+  }
+
+  .balao2 {
+    width: 90%;
+  }
+
+  /*--------------------------------------------------------------- BLOG TABLET -----------------------------*/
+
+  .blog ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*--------------------------------------------------------------- CONTATO  -----------------------------*/
+  .contato form {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bars {
+    display: none;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  nav ul li:hover {
+    background: transparent;
+  }
+
+  nav ul li a:hover {
+    color: #f79a2f;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-desktop img {
+    width: 115px;
+  }
+
+  nav {
+    height: 64px;
+    padding: 0 8%;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    transition: none;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+
+  nav div {
+    width: initial;
+  }
+
+  nav ul li {
+    padding: 20px 10px 0px;
+    float: left;
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 400;
+  }
+
+  nav a {
+    width: 12%;
+    height: fit-content;
+    padding-top: 12px;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .header h1 {
+    margin-top: 140px;
+  }
+
+  .header h2 {
+    padding: 0 15%;
+  }
+
+  .sobre-bianca {
+    padding-top: 70px;
+  }
+
+  .sobre-bianca article {
+    padding: 0px 8%;
+  }
+
+  .videos {
+    padding-top: 70px;
+  }
+
+  .carousel {
+    width: 60%;
+  }
+
+  .blog ul li {
+    width: 28%;
+  }
+
+  .experiancias {
+    padding-top: 70px;
+  }
+
+  .blog {
+    padding-top: 70px;
+  }
+
+  .blog article {
+    width: 100%;
+  }
+
+  .blog div ul li article img {
+    margin: 0px;
+  }
+
+  .redes {
+    text-align: left;
+    margin-top: 11px;
+    position: relative;
+  }
+
+  .footer {
+    height: 9vh;
+  }
+
+  .copyright {
+    text-align: end;
+    margin-top: -19px;
+  }
+
+  .footer ul {
+    position: absolute;
+    margin-left: 138px;
+    margin-top: -39px;
+  }
+}
