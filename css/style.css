@@ -149,7 +149,7 @@ nav ul li a {
   font-size: 40px;
   text-align: center;
   font-weight: 400;
-  margin-top: 30%;
+  margin-top: 43%;
   color: #fff;
 }
 
@@ -241,7 +241,7 @@ nav ul li a {
 }
 
 .videos h3,
-.experiancias h3 {
+.experiencias h3 {
   padding: 10px;
   text-align: center;
   color: #6e6761;
@@ -260,12 +260,12 @@ nav ul li a {
 
 /* ----------------------------------------------------------- SECÇÃO EXPERIENCIA CLIENTE ----------------------*/
 
-.experiancias {
+.experiencias {
   padding-top: 55px;
   background-color: #f8f8f8;
 }
 
-.experiancias h2 {
+.experiencias h2 {
   padding: 5px;
   text-align: center;
   color: #6e6761;
@@ -273,7 +273,7 @@ nav ul li a {
   font-weight: 400;
 }
 
-.experiancias span {
+.experiencias span {
   color: #f79a2f;
 }
 
@@ -286,6 +286,7 @@ nav ul li a {
   width: 100%;
   height: 51vh;
   margin: auto;
+  padding-top: 40px;
 }
 
 .carousel__image {
@@ -297,17 +298,17 @@ nav ul li a {
 .img-name {
   display: flex;
   margin: auto;
-  padding: 20px;
+  /* padding: 23px 0 0 28px;*/
 }
 
 .adulto {
-  max-width: 60%;
-  height: auto;
+  /* max-width: 60%;*/
+  /* height: auto;*/
   border-radius: 100%;
 }
 
 .adulto2 {
-  max-width: 60%;
+  /* max-width: 34%;*/
   height: auto;
   border-radius: 100%;
 }
@@ -428,6 +429,7 @@ nav ul li a {
   color: black;
   padding: 10px;
   position: relative;
+  margin-bottom: 1%;
 }
 
 .balao1:after {
@@ -546,11 +548,13 @@ nav ul li a {
 }
 
 .contato h2 {
+  font-size: 39px;
   text-align: center;
   color: #545454;
 }
 
 .contato h3 {
+  font-size: 14px;
   text-align: center;
   color: #393837;
   font-weight: 400;
@@ -587,7 +591,7 @@ textarea {
   cursor: pointer;
 }
 
-.nome-email-contato {
+.contato form span {
   font-size: 13px;
   color: #000000;
   padding-left: 10px;
@@ -618,6 +622,21 @@ textarea {
 
 .footer div ul li {
   margin: 5px;
+}
+
+@media only screen and (max-width: 812px) and (min-width: 320px) and (orientation: landscape) {
+  .header h1 {
+    margin-top: 2%;
+    font-size: 40px;
+  }
+
+  .header h2 {
+    font-size: 14px;
+  }
+
+  .contato form {
+    margin-top: -125px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -655,12 +674,44 @@ textarea {
     display: block;
   }
 
+  .experiencias {
+    height: 84vh;
+  }
+
   .img-name {
-    width: 128%;
+    width: 100%;
+    padding: 12px 0 0 0;
+  }
+
+  .nome-cliente {
+    padding: 25px 0 0 0;
+    margin: 0;
+  }
+
+  .adulto2 {
+    padding-top: 6px;
   }
 
   .balao2 {
     width: 90%;
+  }
+
+  .carousel {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .carousel__track-container {
+    width: 87%;
+    height: 84vh;
+  }
+
+  .carousel__button--left {
+    left: -2px;
+  }
+
+  .carousel__button--right {
+    right: -5px;
   }
 
   /*--------------------------------------------------------------- BLOG TABLET -----------------------------*/
@@ -751,24 +802,60 @@ textarea {
     padding-top: 70px;
   }
 
+  .sobre-bianca h2 {
+    font-size: 40px;
+  }
   .sobre-bianca article {
-    padding: 0px 8%;
+    padding: 0px 7%;
   }
 
   .videos {
     padding-top: 70px;
   }
 
+  .videos h2 {
+    font-size: 40px;
+  }
+
+  .videos h3 {
+    font-size: 15px;
+  }
+
+  .experiencias {
+    padding-top: 70px;
+  }
+
+  .experiencias h2 {
+    font-size: 40px;
+  }
+
+  .experiencias h3 {
+    font-size: 15px;
+  }
+
   .carousel {
     width: 60%;
+    height: 61vh;
+  }
+
+  .carousel__track-container {
+    height: 52vh;
+  }
+
+  .adulto {
+    padding-left: 11%;
+  }
+
+  .adulto2 {
+    padding-left: 6%;
+  }
+
+  .blog h2 {
+    font-size: 40px;
   }
 
   .blog ul li {
     width: 28%;
-  }
-
-  .experiancias {
-    padding-top: 70px;
   }
 
   .blog {
