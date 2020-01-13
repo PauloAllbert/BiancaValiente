@@ -298,17 +298,13 @@ nav ul li a {
 .img-name {
   display: flex;
   margin: auto;
-  /* padding: 23px 0 0 28px;*/
 }
 
 .adulto {
-  /* max-width: 60%;*/
-  /* height: auto;*/
   border-radius: 100%;
 }
 
 .adulto2 {
-  /* max-width: 34%;*/
   height: auto;
   border-radius: 100%;
 }
@@ -323,17 +319,6 @@ nav ul li a {
   font-weight: 900;
   color: rgb(19, 19, 19);
 }
-
-/*.caixinhas {
-  display: flex;
-  width: 100%;
-  margin-left: 9px;
-}*/
-
-/*.caixinhas li {
-  width: 23%;
-  margin-right: 226px;
-}*/
 
 .carousel__track-container {
   width: 80%;
@@ -655,20 +640,15 @@ textarea {
     width: 300px;
   }
 
-  /* ----------------------------------------------------------- SECÇÃO BIANCA TABLET ----------------------*/
-
   .sobre-bianca {
     column-count: 2;
     column-gap: 10px;
   }
 
-  /* ----------------------------------------------------------- SECÇÃO VIDEO TABLET----------------------*/
   .videos ul {
     display: flex;
     justify-content: center;
   }
-
-  /* ----------------------------------------------------------- SECÇÃO EXPERIENCIA CLIENTE ----------------------*/
 
   .desaparecer {
     display: block;
@@ -714,14 +694,11 @@ textarea {
     right: -5px;
   }
 
-  /*--------------------------------------------------------------- BLOG TABLET -----------------------------*/
-
   .blog ul {
     display: flex;
     justify-content: center;
   }
 
-  /*--------------------------------------------------------------- CONTATO  -----------------------------*/
   .contato form {
     width: 450px;
   }
@@ -730,18 +707,6 @@ textarea {
 @media screen and (min-width: 900px) {
   .bars {
     display: none;
-  }
-
-  nav span {
-    display: none;
-  }
-
-  nav ul li:hover {
-    background: transparent;
-  }
-
-  nav ul li a:hover {
-    color: #f79a2f;
   }
 
   .logo-desktop {
@@ -772,6 +737,18 @@ textarea {
     padding: 20px 10px 0px;
     float: left;
     border-bottom: none;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  nav ul li:hover {
+    background: transparent;
+  }
+
+  nav ul li a:hover {
+    color: #f79a2f;
   }
 
   nav ul li a {
@@ -870,24 +847,22 @@ textarea {
     margin: 0px;
   }
 
-  .redes {
-    text-align: left;
-    margin-top: 11px;
-    position: relative;
-  }
-
   .footer {
     height: 9vh;
-  }
-
-  .copyright {
-    text-align: end;
-    margin-top: -19px;
   }
 
   .footer ul {
     position: absolute;
     margin-left: 138px;
     margin-top: -39px;
+  }
+  .redes {
+    text-align: left;
+    margin-top: 11px;
+    position: relative;
+  }
+  .copyright {
+    text-align: end;
+    margin-top: -19px;
   }
 }
