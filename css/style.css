@@ -599,6 +599,7 @@ textarea {
 .footer div ul {
   display: flex;
   justify-content: center;
+  margin-top: -33px;
 }
 
 .footer ul li a img {
@@ -782,6 +783,7 @@ textarea {
   .sobre-bianca h2 {
     font-size: 40px;
   }
+
   .sobre-bianca article {
     padding: 0px 7%;
   }
@@ -856,11 +858,13 @@ textarea {
     margin-left: 138px;
     margin-top: -39px;
   }
+
   .redes {
     text-align: left;
     margin-top: 11px;
     position: relative;
   }
+
   .copyright {
     text-align: end;
     margin-top: -19px;
